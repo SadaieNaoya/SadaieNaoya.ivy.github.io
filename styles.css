@@ -6,14 +6,23 @@ body {
 }
 
 header {
-    background-color: #e74c3c;
-    color: white;
+    background-color: #1074d1;
+    color: white; /* ヘッダー内のデフォルトのテキスト色を白に設定 */
     padding: 10px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+}
+
+header h1 a {
+    color: white; /* ヘッダー内のリンクのテキスト色を白に設定 */
+    text-decoration: none; /* リンクの下線を削除 */
+}
+
+header h1 a:hover {
+    color: #d1e1ff; /* リンクのホバー時の色を設定（任意） */
 }
 
 nav {
@@ -44,7 +53,7 @@ nav ul li a {
 
 main {
     flex: 7; /* メインコンテンツの幅を増やす */
-    background-color: #f39c12;
+    background-color: #5e5b3245;
     padding: 20px;
 }
 
@@ -100,4 +109,3 @@ thead {
         margin-left: 0;
         text-align: center; /* モバイルでは中央揃えに */
     }
-}
