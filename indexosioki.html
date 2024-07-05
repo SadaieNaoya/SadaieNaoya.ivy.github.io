@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALO日記</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .image {
+            position: absolute;
+            width: 400px; /* 画像サイズを3倍に */
+            height: 300px; /* 画像サイズを3倍に */
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <header id="home">
+        <h1><a href="index.html#home">りきの日記</a></h1>
+    </header>
+    <nav>   
+        <ul>
+            <li><a href="indexsub1.html">VALO日記 <img class="nav-icon" src="img/valo icon.png" alt="VALOのアイコン"></a></li>
+            <li><a href="indexsub2.html">LoL日記 <img class="nav-icon" src="img/lol icon.png" alt="LOLのアイコン"></a></li>
+            <li><a href="indexsub3.html">ソシャゲ日記 <img class="nav-icon" src="img/fgo icon.png" alt="FGOのアイコン"></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <section id="valo1">
+                <h2>秘密の部屋</h2>
+                <p>広告ってうざいよね</p>
+            </section>
+        </main>
+        <aside>
+            <h2>更新履歴</h2>
+            <ul>
+                <li>2024/07/03 - <a href="index.html">秘密の部屋から出る</a></li>
+                <li>2024/07/02 - <a href="indexsub1.html #valo2">VAlo日記2を追加</a></li>
+                <li>2024/07/01 - <a href="indexsub1.html #valo1">VAlo日記1を追加</a></li>
+                <li>2024/06/26 - <a href="indexsub2.html #lol2">LOL日記2を追加</a></li>
+                <li>2024/06/25 - <a href="indexsub2.html#lol1">LOL日記1を追加</a></li>
+                <li>2024/06/24 - <a href="indexsub3.html#social2">ソシャゲ日記2を追加</a></li>
+                <li>2024/06/05 - <a href="index.html#uwasa">大正コソコソ噂話追加</a></li>
+                <li>2024/06/02 - <a href="indexsub3.html#social1">ソシャゲ日記1</a></li>
+                <li>2024/05/15 - サイト公開</li>  
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <p>© 2024 りき</p>
+    </footer>
+    <script>
+        function addImage() {
+            const img = document.createElement('img');
+            img.src = 'img/keikoku1-1.png';
+            img.className = 'image';
+            img.style.top = Math.random() * window.innerHeight + 'px';
+            img.style.left = Math.random() * window.innerWidth + 'px';
+            document.body.appendChild(img);
+        }
+
+        function startAddingImages() {
+            const interval = setInterval(addImage, 100);
+            setTimeout(() => clearInterval(interval), 10000); // 10秒に変更
+        }
+
+        window.onload = startAddingImages;
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALO日記</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay" id="ad">
+        <div>
+          <p>
+            <a href="indexosioki.html">
+              <img src="img/click.jpg" alt="押してください">
+            </a>
+          </p>
+          <button class="close-btn" onclick="document.getElementById('ad').style.display='none'">&times;</button>
+        </div>
+    </div>
+
+    <title>スクロール追従バナー広告</title>
+    <style>
+        .banner {
+            position: fixed; bottom: 1px; left: 0; width: 100%; background-color: rgb(63, 63, 63);
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1.5em;
+            z-index: 1000; 
+        }
+        .close-button {
+            position: absolute;
+            left: 10px; top: 50%; transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 1.2em; 
+            cursor: pointer;
+            padding: 0; line-height: 1; 
+        } 
+        .banner a {
+            color: white;
+            text-decoration: none;
+        }
+        .banner a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <div class="banner" id="bannerAd">
+        <a href="indexosioki.html">こちらからもとの画面に戻れます</a>
+        <button class="close-button" onclick="closeBanner()">×</button>
+    </div>
+    
+    <script>
+        function closeBanner() {
+            document.getElementById('bannerAd').style.display = 'none';
+        }
+    </script>
+  
+
+
+    <header id="home">
+        <h1><a href="index.html#home">りきの日記</a></h1>
+    </header>
+    <nav>   
+        <ul>
+            <li><a href="indexsub1.html">VALO日記 <img class="nav-icon" src="img/valo icon.png" alt="VALOのアイコン"></a></li>
+            <li><a href="indexsub2.html">LoL日記 <img class="nav-icon" src="img/lol icon.png" alt="LOLのアイコン"></a></li>
+            <li><a href="indexsub3.html">ソシャゲ日記 <img class="nav-icon" src="img/fgo icon.png" alt="FGOのアイコン"></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <main>
+            <section id="valo1">
+                <h2>秘密の部屋</h2>
+                <p>
+                    秘密の部屋へようこそ！迷路は楽しんで貰えたかな？<br>
+                    本編が味気ないのでここではHTMLとCSSの色々な機能を使ってるよ。<br>
+                    楽しんでいってね～！<br>
+                </p>
+            </section>
+                <!-- 1セット目 -->
+                <h3>橘高先生の大正コソコソ噂話</h3>
+                <div class="content">
+                    <p class="default-view">大正コソコソ噂話</p>
+                    <input type="checkbox" id="more-btn1">
+                    <label for="more-btn1" class="more-btn">もっと見る</label>
+                    <label for="more-btn1" class="close-btn">閉じる</label>
+                    <p class="hidden-view">
+                        <img class="saizutyousei" src="img/supura.jpg" alt="スプラの画像"><br>
+                        実はスプラガチ勢
+                    </p>
+                </div>
+
+                <!-- 2セット目 -->
+                <h3>丸尾先生の大正コソコソ噂話</h3>
+                <div class="content">
+                    <p class="default-view">大正コソコソ噂話</p>
+                    <input type="checkbox" id="more-btn2">
+                    <label for="more-btn2" class="more-btn">もっと見る</label>
+                    <label for="more-btn2" class="close-btn">閉じる</label>
+                    <p class="hidden-view">
+                        <img class="saizutyousei" src="img/bennkyou.png" alt="予習してる画像"><br>
+                        模試のやり直しの解説用の準備を１時間くらい前日にしていたが、授業の予定を間違えてて実際は木村先生の担当だった。
+                    </p>
+                </div>
+
+                <!-- 3セット目 -->
+                <h3>木村先生の大正コソコソ噂話</h3>
+                <div class="content">
+                    <p class="default-view">大正コソコソ噂話</p>
+                    <input type="checkbox" id="more-btn3">
+                    <label for="more-btn3" class="more-btn">もっと見る</label>
+                    <label for="more-btn3" class="close-btn">閉じる</label>
+                    <p class="hidden-view">
+                        <img class="saizutyousei" src="img/sumaho.png" alt="スマホの画像"><br>
+                        ７階にスマホ忘れた時届けてくれた！
+                    </p>
+                </div>
+
+                <!-- 4セット目 -->
+                <h3>吉武先生の大正コソコソ噂話</h3>
+                <div class="content">
+                    <p class="default-view">大正コソコソ噂話</p>
+                    <input type="checkbox" id="more-btn4">
+                    <label for="more-btn4" class="more-btn">もっと見る</label>
+                    <label for="more-btn4" class="close-btn">閉じる</label>
+                    <p class="hidden-view">
+                        <img class="saizutyousei" src="img/yuukyuu2.jpg" alt="有給申請の画像"><br>
+                        ずっと前からゲームのイベントの為に有給申請をしてて、一か月ごとにこの日休みますって言ってたら<br>
+                        森崎先生に、大丈夫だから休みなよって言われたらしい（糞偏見報道）
+                    </p>
+                </div>
+
+                <h3>裏話</h3>
+                <P>
+                    まずは、最後の方駆け足で手抜きばっかだし汚いコード書きまくりましたが無事完成してよかったです。<br>
+                    画像も探すのめんどくさくて画像の質がどんどん適当になっていってました（笑）<br>
+                    うざい広告系のやつをもっと見る開いたら表示したりなどで、後２種類やろうと思っていたのですが時間的に断念することになったのは後悔が残るところです<br>
+                    途中ＣＳＳ壊れて発狂、画像の規約関係で発狂、Javascript分からん過ぎて発狂と大波乱でしたが、無事完成してよかったです
+                </P>
+            
+        </main>
+        <aside>
+            <h2>更新履歴</h2>
+            <ul>
+                <li>2024/07/03 - <a href="index.html">秘密の部屋から出る</a></li>
+                <li>2024/07/02 - <a href="indexsub1.html #valo2">VAlo日記2を追加</a></li>
+                <li>2024/07/01 - <a href="indexsub1.html #valo1">VAlo日記1を追加</a></li>
+                <li>2024/06/26 - <a href="indexsub2.html #lol2">LOL日記2を追加</a></li>
+                <li>2024/06/25 - <a href="indexsub2.html#lol1">LOL日記1を追加</a></li>
+                <li>2024/06/24 - <a href="indexsub3.html#social2">ソシャゲ日記2を追加</a></li>
+                <li>2024/06/05 - <a href="index.html#uwasa">大正コソコソ噂話追加</a></li>
+                <li>2024/06/02 - <a href="indexsub3.html#social1">ソシャゲ日記1</a></li>
+                <li>2024/05/15 - サイト公開</li>  
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <p>© 2024 りき</p>
+    </footer>
+
+    <script> 
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById('ad').style.display = 'flex';
+            }, 3000); // 3秒後に表示
+        }
+    </script>
+</body>
+</html>
