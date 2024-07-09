@@ -108,10 +108,11 @@ thead {
       flex-direction: column;
   }
   .saizutyousei {
-    width: 500%;
-    height: auto;
+  　width: 200%;
+  　height: 50%;
     text-align: left;
   }
+
 
   aside {
       margin-left: 0;
