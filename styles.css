@@ -107,6 +107,11 @@ thead {
   .container {
       flex-direction: column;
   }
+  .saizutyousei {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
 
   aside {
       margin-left: 0;
