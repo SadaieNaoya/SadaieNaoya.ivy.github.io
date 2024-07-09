@@ -112,6 +112,20 @@ thead {
       margin-left: 0;
       text-align: center; /* モバイルでは中央揃えに */
   }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th, td {
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+
+  th {
+    background-color: #444444; /* ヘッダーの背景色 */
+  }
 }
 
 /*ここからコソコソ裏話のやつ*/
@@ -255,16 +269,15 @@ strong {
 }
 
 /*中央寄せ*/
-main{
+main {
   padding-left: calc((100% - 1200px) / 2);
   padding-right: calc((100% - 1200px) / 2);
 }
 
-/*ｐタグの後、間隔を開けるやつ*/
+/*pタグの後、間隔を開けるやつ*/
 p {
   margin-bottom: 5em; /* または任意の値 */
 }
-
 
 body {
   margin: 0;
