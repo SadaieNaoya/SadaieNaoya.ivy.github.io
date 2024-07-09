@@ -310,3 +310,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.hr1 {
+  border-top: 3px dotted #ffffff; /* 点線 */
+}
